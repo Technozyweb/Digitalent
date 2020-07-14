@@ -1,0 +1,75 @@
+@media all and (max-width: 1000px) {
+
+    /* Section Team */
+    .container-team {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        max-width: 50%;
+        margin: 20px auto;
+    }
+
+    .konten-1 .caption {
+        width: 50%;
+        height: auto;
+    }
+
+    .top-wrapper h1 {
+        font-size: 32px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+
+    /* Section Team */
+    .container-team {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    /* Section Form */
+    .container-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-section .submit {
+        width: 40%;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .konten-1 .caption {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .btn {
+        width: 100%;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

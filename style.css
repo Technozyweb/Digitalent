@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Awal Header */
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(0, 55, 66, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #e74c3c;
+    line-height: 65px;
+    letter-spacing: 5px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+
+/* Akhir Header */
+
+.konten-1 {
+    width: 1170px;
+    height: 720px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.konten-1 img {
+    height: 640px;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.konten-1 .caption .title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.konten-1 .caption {
+    height: 520px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 100px;
+    float: right;
+    font-size: 16px;
+}
+
+.txt-caption .btn {
+    padding: 16px 32px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    background-color: royalblue;
+    border-radius: 5px;
+    box-shadow: 0 7px #051a53;
+    font-size: 16px;
+}
+
+.konten-2 {
+    height: 780 px;
+    margin: 0 auto;
+    background-image: url(img/konten-2.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.konten-2 .txt {
+    padding: 270px;
+    color: whitesmoke;
+    margin: 100px;
+    text-align: center;
+}
+
+.konten-2 .txt h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.konten-2 .txt p {
+    font-size: 16px;
+}
+
+.konten-2 .txt .button {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    background-color: royalblue;
+    border-radius: 5px;
+    box-shadow: 0 7px #051a53;
+}
+
+.konten-2 .txt .button:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+/* Awal Section Team */
+section .team {
+    background-image: url(img/email-pattern.png);
+    background-repeat: repeat;
+}
+
+.team .header-team {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: salmon;
+    text-underline-position: under;
+}
+
+.container-team {
+    padding: 0 40px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 300px;
+    max-width: 350px;
+    margin: 0 15px;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: all 0.4s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .top-text {
+    padding: 5px;
+}
+
+.card .top-text .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card .top-text p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+    background-color: whitesmoke;
+}
+
+.card .bottom-text .text {
+    text-align: center;
+}
+
+.card .bottom-text .btn {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card .bottom-text .btn a {
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+
+.card .bottom-text .btn a:hover {
+    transform: scale(0.9);
+}
+
+/* Akhir Section Team */
+
+/* Awal Section Form */
+.contact-section {
+    background: linear-gradient(rgba(0, 43, 71, 0.6), rgba(0, 44, 73, 0.9));
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.container-form {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contact-section .container-form h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: rgb(238, 235, 235);
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.contact-section .container-form p {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.contact-form {
+    text-align: center;
+    width: 100%;
+
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+.submit {
+    width: 20%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    border: 2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+    transition: all .3s;
+}
+
+.submit:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.submit:active {
+    border: 1px solid salmon;
+    background-color: salmon;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+/* Akhir Section Form */
+
+/* Awal Footer */
+.footer {
+    background-color: rgba(0, 55, 66, 0.9);
+    color: #f3f3f3;
+    height: 120px;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 32px;
+    line-height: 120px;
+    margin-left: 30px;
+}
+
+/* Akhir Footer */
